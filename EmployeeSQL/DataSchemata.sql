@@ -24,7 +24,8 @@ CREATE TABLE employees(
 	first_name VARCHAR NOT NULL,
 	last_name VARCHAR NOT NULL,
 	sex VARCHAR NOT NULL,
-	hire_date DATE NOT NULL
+	hire_date DATE NOT NULL,
+	foreign key (emp_title_id) references titles(title_id)
 	);
 	
 CREATE TABLE salaries(
